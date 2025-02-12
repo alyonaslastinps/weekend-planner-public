@@ -1,0 +1,13 @@
+import { NextResponse } from "next/server"
+
+export async function GET() {
+  const meals = [
+    { id: 1, name: "Grilled Chicken Salad", type: "Lunch" },
+    { id: 2, name: "Vegetable Stir Fry", type: "Dinner" },
+    { id: 3, name: "Greek Yogurt with Berries", type: "Breakfast" },
+    { id: 4, name: "Quinoa Bowl", type: "Lunch" },
+  ]
+
+  return NextResponse.json(meals)
+}
+
